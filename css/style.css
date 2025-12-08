@@ -1,0 +1,287 @@
+/* #f87315 */
+/* #f46322 */
+/* #be1f24 */
+
+body {
+  /* font-family: "Lemonada", cursive; */
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.text-primary {
+  color: #be1f24 !important;
+}
+
+.btn-primary {
+  color: white;
+  border-color: #be1f24 !important;
+  background-color: #be1f24 !important;
+}
+
+.btn-primary:hover {
+  color: white;
+  background-color: #93181c !important;
+}
+
+.btn-outline-primary {
+  border-color: #be1f24 !important;
+  color: #be1f24;
+}
+
+.btn-outline-primary:hover {
+  color: white;
+  background-color: #be1f24 !important;
+}
+
+.border-primary {
+  border-color: #be1f24 !important;
+}
+
+.nav-link {
+  border: 1px solid transparent;
+  color: white;
+}
+
+.nav-link:hover {
+  color: #be1f24 !important;
+  border: 1px solid #be1f24;
+}
+
+.active,
+.active:hover {
+  color: white !important;
+  background-color: #be1f24 !important;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    margin-top: 16px;
+  }
+
+  .nav-link {
+    padding: 16px;
+  }
+}
+
+.side-menu {
+  right: 10px;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 50;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.75) inset;
+}
+
+.side-menu a {
+  transition: 0.5s;
+}
+
+.side-menu a:hover {
+  -webkit-text-stroke: 1px white;
+}
+
+.navbar .logo {
+  width: 50px;
+}
+
+.form-control:focus {
+  box-shadow: 0px 0px 3px 2px rgb(163, 163, 163);
+}
+
+@media (max-width: 992px) {
+  .dropdown {
+    border: none !important;
+  }
+
+  .side-menu {
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+}
+
+.dropdown-toggle:focus {
+  border: 1px solid #be1f24 !important;
+}
+
+.dropdown-menu a:hover {
+  background-color: #e9ecef;
+}
+
+.carousel {
+  height: 100vh;
+  padding-top: 3.9rem;
+}
+
+.carousel-indicators {
+  margin-inline: auto;
+  width: 200px !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.75) inset;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+}
+
+.carousel-item img {
+  margin: auto;
+  /* width: 100% !important; */
+  height: 100%;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 50%;
+  margin: auto;
+}
+
+@media (max-width: 595px) {
+  .carousel-caption h5 {
+    font-size: 1rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.75rem;
+  }
+}
+
+.carousel-control-next {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+}
+
+.carousel-control-prev {
+  background: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.seperator-section {
+  width: 100%;
+  height: 350px;
+  background-image: url("../images/background.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.seperator-section .overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.product-card::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 0;
+  height: 0;
+  background-color: #be1f2425;
+  transition: all 0.5s ease;
+}
+
+.product-card::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: "";
+  width: 0;
+  height: 0;
+  background-color: #be1f2425;
+  transition: all 0.5s ease;
+}
+
+.product-card:hover::before,
+.product-card:hover::after {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.product-card a {
+  margin-bottom: 16px;
+  z-index: 2;
+}
+
+.card-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.card-overlay p {
+  margin: 0;
+}
+
+.card-overlay .inner-img {
+  background-size: cover;
+  background-position: center;
+  width: 80px;
+  height: 100px;
+}
+
+.person-card {
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.person-card:hover {
+  transform: scale(0.9);
+}
+
+.news-card .card-date {
+  font-size: 12px;
+}
+
+.card-date {
+  display: inline-block;
+}
+
+.news-card .card-body .card-date::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: #be1f24;
+  margin: 8px 0 16px 0;
+}
+
+.news-image {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+
+.news-card:hover .news-image {
+  transform: scale(1.1);
+}
+
+.news-card .btn:hover {
+  border-color: #6c757d !important;
+  background-color: #6c757d !important;
+}
+
+.sub-card {
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.sub-card:hover {
+  transform: scale(1.05);
+}
